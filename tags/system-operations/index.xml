@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>System operations on 爱上梧桐花</title>
+    <link>https://xcodehub.github.io/tags/system-operations/</link>
+    <description>Recent content in System operations on 爱上梧桐花</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://xcodehub.github.io/tags/system-operations/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>增加windows右键菜单打开命令行</title>
+      <link>https://xcodehub.github.io/post/%E5%A2%9E%E5%8A%A0windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E8%BF%90%E8%A1%8C%E5%91%BD%E4%BB%A4%E8%A1%8C/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xcodehub.github.io/post/%E5%A2%9E%E5%8A%A0windows%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E8%BF%90%E8%A1%8C%E5%91%BD%E4%BB%A4%E8%A1%8C/</guid>
+      <description>&lt;p&gt;为windows 右键菜单增加打开命令行功能。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

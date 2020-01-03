@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>爱上梧桐花</title><meta name="description" content="Kali Linux下安装fcitx中文输入法"><meta name="author" content="邢龙">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.874b8160f104317a9732.min.css">
+        
+    
+
+
+<link rel="canonical" href="https://xcodehub.github.io/post/kali-linux%E4%B8%8B%E5%AE%89%E8%A3%85fcitx%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E6%B3%95/"><meta property="og:title" content="Kali Linux下安装fcitx中文输入法" />
+<meta property="og:description" content="Kali Linux下安装fcitx中文输入法" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xcodehub.github.io/post/kali-linux%E4%B8%8B%E5%AE%89%E8%A3%85fcitx%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E6%B3%95/" />
+<meta property="og:image" content="https://xcodehub.github.io/Linux_Learn06.jpg" />
+<meta property="article:published_time" content="2019-12-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-12-30T00:00:00+00:00" />
+
+<meta itemprop="name" content="Kali Linux下安装fcitx中文输入法">
+<meta itemprop="description" content="Kali Linux下安装fcitx中文输入法">
+<meta itemprop="datePublished" content="2019-12-30T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-12-30T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="73">
+<meta itemprop="image" content="https://xcodehub.github.io/Linux_Learn06.jpg">
+
+
+
+<meta itemprop="keywords" content="Learn_Linux," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://xcodehub.github.io/Linux_Learn06.jpg"/>
+
+<meta name="twitter:title" content="Kali Linux下安装fcitx中文输入法"/>
+<meta name="twitter:description" content="Kali Linux下安装fcitx中文输入法"/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://xcodehub.github.io">爱上梧桐花</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">December 30, 2019</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>73 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>1 min read</span>
+                        </div>
+
+                        <h1>Kali Linux下安装fcitx中文输入法</h1>
+
+                        <ul class="authors list-inline"></ul>
+                    </div>
+                </div><div class="row justify-content-center mb-3">
+                                <div class="col-lg-10">
+                                    <img data-src="/images/Linux_Learn06_hu966a9d1457c2ebc2e74afea86088eee9_1030884_900x500_fit_q75_box.jpg" class="img-fluid rounded mx-auto d-block" alt="Kali Linux下安装fcitx中文输入法">
+                                </div>
+                            </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <p>Kali Linux下安装fcitx中文输入法</p>
+<p>安装linux操作系统选择的是英文版本，但毕竟还是要输入中文，于是开始安装中文输入法，选择的是fcitx。网上很多说可以安装搜狗和谷歌输入法的但是尝试多次都是失败的。</p>
+<p>###安装fcitx输入法</p>
+<p>1、在终端输入以下命令</p>
+<pre><code class="language-bash">apt-get clean &amp;&amp; apt-get update -y #首先更新一下源
+sudo apt-get install &quot;fcitx&quot;
+sudo apt-get install fcitx-pinyin
+</code></pre>
+<p>这只是安装最基本的中文输入法，还可以安装谷歌或搜狗的输入法，但是我现在用的kali linux 2019.4安装谷歌和搜狗时会出错，我也不知道怎样解决。所以我只是安装了最基本的输入法。</p>
+<p>###安装搜狗输入法
+1、安装fcitx</p>
+<pre><code class="language-bash">apt-get install fcitx
+</code></pre>
+<p>顺利的话会自动安装成功，如果遇到依赖错误，按提示修复或者输入apt-get -f install 修复，但是如果提示“依赖xxx，但是xxx将不会被安装”，这一般是源太旧，建议换个其他的源。</p>
+<p>2、安装fcitx-libs-qt也许不需要</p>
+<pre><code class="language-bash">apt-get install fcitx-libs-qt
+</code></pre>
+<p>3、下载安装搜狗输入法
+去搜狗输入法官网http://pinyin.sogou.com/linux/ 下载自己系统对应版本的输入法安装包。到下载的搜狗输入法安装包目录。然后运行</p>
+<pre><code class="language-bash">dpkg -i 下载的sogo安装包文件名
+</code></pre>
+<p>这一步比较慢，如果提示有依赖没有安装，可以用apt-get &ndash;fix-broken install （ 或apt &ndash;fix-broken insatll 或apt-get -f install）安装，如果提示“sogoupinyin依赖xxx(&gt;=1.2.3…)，但系统中版本为1.1.1”之类的，说明源太旧了，需要换个其他源。可以用apt-get remove [package-name] 卸载旧版软件。要查看制定软件可用版本（本机的源上）可以用apt-cache madison [package-name] 查看，要安装制定版本的软件，可以用apt-get install fcitx=1.2.3 这样的语法安装。</p>
+<p>4、启用搜狗输入法
+终端中输入：</p>
+<pre><code class="language-bash">im-config
+</code></pre>
+<p>进入输入法配置，选择确定，然后点击是，在弹出来的输入法选择框中选择fcitx，然后确定 。
+注销账号，重新登录，然后右上角有个键盘图标，点击选择【设置】，在左下角点击【+】新增输入法
+在弹出窗口中取消“仅显示当前预览”复选框，然后搜索Sogou,找到搜狗输入法，点击OK。打开编辑器，“Ctrl+，”即可切换到搜狗输入法</p>
+<p>###安装谷歌输入
+首先也要安装fcitx。</p>
+<pre><code class="language-bash">apt-get install fcitx-googlepinyin
+</code></pre>
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/learn_linux">
+                                    <i class="fas fa-tag mr-2"></i>Learn_Linux
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fxcodehub.github.io%2fpost%2fkali-linux%25E4%25B8%258B%25E5%25AE%2589%25E8%25A3%2585fcitx%25E4%25B8%25AD%25E6%2596%2587%25E8%25BE%2593%25E5%2585%25A5%25E6%25B3%2595%2f&text=Kali%20Linux%e4%b8%8b%e5%ae%89%e8%a3%85fcitx%e4%b8%ad%e6%96%87%e8%be%93%e5%85%a5%e6%b3%95">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fxcodehub.github.io%2fpost%2fkali-linux%25E4%25B8%258B%25E5%25AE%2589%25E8%25A3%2585fcitx%25E4%25B8%25AD%25E6%2596%2587%25E8%25BE%2593%25E5%2585%25A5%25E6%25B3%2595%2f&title=Kali%20Linux%e4%b8%8b%e5%ae%89%e8%a3%85fcitx%e4%b8%ad%e6%96%87%e8%be%93%e5%85%a5%e6%b3%95">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fxcodehub.github.io%2fpost%2fkali-linux%25E4%25B8%258B%25E5%25AE%2589%25E8%25A3%2585fcitx%25E4%25B8%25AD%25E6%2596%2587%25E8%25BE%2593%25E5%2585%25A5%25E6%25B3%2595%2f&t=Kali%20Linux%e4%b8%8b%e5%ae%89%e8%a3%85fcitx%e4%b8%ad%e6%96%87%e8%be%93%e5%85%a5%e6%b3%95">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fxcodehub.github.io%2fpost%2fkali-linux%25E4%25B8%258B%25E5%25AE%2589%25E8%25A3%2585fcitx%25E4%25B8%25AD%25E6%2596%2587%25E8%25BE%2593%25E5%2585%25A5%25E6%25B3%2595%2f&title=Kali%20Linux%e4%b8%8b%e5%ae%89%e8%a3%85fcitx%e4%b8%ad%e6%96%87%e8%be%93%e5%85%a5%e6%b3%95">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/post/kali-linux%E5%85%81%E8%AE%B8root-ssh%E7%99%BB%E5%BD%95/" class="d-block"><img data-src="/images/Linux_Learn04_hu323cf5bb85167c49f0b71950f719bc37_1083893_700x350_fit_q75_box.jpg" class="card-img-top mx-auto d-block" alt="Kali Linux允许SSH客户端登录"><div class="card-body">
+            <h4 class="card-title">Kali Linux允许SSH客户端登录</h4>
+            <p class="card-text text-muted text-uppercase">December 30, 2019</p>
+            <div class="card-text">
+                这篇文章讲解了在kali linux下怎样允许root用户使用ssh工具登录系统
+
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/post/linux%E5%8E%8B%E7%BC%A9%E4%B8%8E%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%91%BD%E4%BB%A4/" class="d-block"><img data-src="/images/Linux_Learn05_hu11ac4b508f083ffeb5501f1ec1649c49_1176800_700x350_fit_q75_box.jpg" class="card-img-top mx-auto d-block" alt="Linux压缩与解压缩命令"><div class="card-body">
+            <h4 class="card-title">Linux压缩与解压缩命令</h4>
+            <p class="card-text text-muted text-uppercase">December 30, 2019</p>
+            <div class="card-text">
+                压缩与解压缩命令
+linux系统中有以下五种格式的压缩文件,分别为：.zip 、 .gz 、 .bz2 、 .tar.gz 、 .tar.bz2，其中最常用的文件压缩格式为 .tar.gz和.tar.bz2。
+
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/post/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="d-block"><img data-src="/images/Linux_Learn08_huacbecc715aa99b7671491d77b8a0116f_1135701_700x350_fit_q75_box.jpg" class="card-img-top mx-auto d-block" alt="使用HUGO搭建个人博客 "><div class="card-body">
+            <h4 class="card-title">使用HUGO搭建个人博客 </h4>
+            <p class="card-text text-muted text-uppercase">December 30, 2019</p>
+            <div class="card-text">
+                Hugo是一个用Go编写的静态站点生成器，由于具有丰富的主题资源和惊人的生成速度而备受青睐。本博客即是基于Hugo搭建，下面讲述一下我的建站历程以及踩的几个大坑（此处手动Doge…）。
+
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://xcodehub.github.io/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                        <a href="mailto://example@example.com" class="icons d-block">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li><li class="list-inline-item">
+                            <a href="https://github.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://gitlab.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://www.weibo.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-weibo fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.bd8bd649a96c01493b8c.min.js"></script>
+        
+    
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</body>
+</html>

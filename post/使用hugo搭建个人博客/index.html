@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>爱上梧桐花</title><meta name="description" content="使用HUGO搭建个人博客 "><meta name="author" content="邢龙">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.874b8160f104317a9732.min.css">
+        
+    
+
+
+<link rel="canonical" href="https://xcodehub.github.io/post/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"><meta property="og:title" content="使用HUGO搭建个人博客 " />
+<meta property="og:description" content="使用HUGO搭建个人博客 " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xcodehub.github.io/post/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" />
+<meta property="og:image" content="https://xcodehub.github.io/Linux_Learn08.jpg" />
+<meta property="article:published_time" content="2019-12-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-12-30T00:00:00+00:00" />
+
+<meta itemprop="name" content="使用HUGO搭建个人博客 ">
+<meta itemprop="description" content="使用HUGO搭建个人博客 ">
+<meta itemprop="datePublished" content="2019-12-30T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-12-30T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="469">
+<meta itemprop="image" content="https://xcodehub.github.io/Linux_Learn08.jpg">
+
+
+
+<meta itemprop="keywords" content="Learn_Linux," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://xcodehub.github.io/Linux_Learn08.jpg"/>
+
+<meta name="twitter:title" content="使用HUGO搭建个人博客 "/>
+<meta name="twitter:description" content="使用HUGO搭建个人博客 "/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://xcodehub.github.io">爱上梧桐花</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">December 30, 2019</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>469 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>3 mins read</span>
+                        </div>
+
+                        <h1>使用HUGO搭建个人博客 </h1>
+
+                        <ul class="authors list-inline"></ul>
+                    </div>
+                </div><div class="row justify-content-center mb-3">
+                                <div class="col-lg-10">
+                                    <img data-src="/images/Linux_Learn08_huacbecc715aa99b7671491d77b8a0116f_1135701_900x500_fit_q75_box.jpg" class="img-fluid rounded mx-auto d-block" alt="使用HUGO搭建个人博客 ">
+                                </div>
+                            </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <p>Hugo是一个用Go编写的静态站点生成器，由于具有丰富的主题资源和惊人的生成速度而备受青睐。本博客即是基于Hugo搭建，下面讲述一下我的建站历程以及踩的几个大坑（此处手动Doge…）。</p>
+<p>Hugo是一个用Go编写的静态站点生成器，由于具有丰富的主题资源和惊人的生成速度而备受青睐。本博客即是基于Hugo搭建，下面讲述一下我的建站历程以及踩的几个大坑（此处手动Doge…）。</p>
+<h2 id="hugo">安装Hugo以及生成第一篇文章</h2>
+<h3 id="hugo-1">安装Hugo</h3>
+<p>如果你是<code>macOS</code>用户，请使用<code>Homebrew</code>快速安装</p>
+<pre><code class="language-bash">brew install hugo
+</code></pre>
+<p>如果你是<code>Windows</code>用户，请使用<code>Chocolatey</code>或者<code>Scoop</code>快速安装，取决于你使用什么包管理</p>
+<pre><code class="language-bash">choco install hugo -confirm
+</code></pre>
+<pre><code class="language-bash">scoop install hugo
+</code></pre>
+<p>如果你是<code>Debian</code>或<code>Ubuntu</code>用户，请使用<code>apt</code>快速安装</p>
+<pre><code class="language-bash">sudo apt-get install hugo
+</code></pre>
+<p>基本上使用单行命令都可以成功安装Hugo，具体请移步<a href="https://gohugo.io/getting-started/installing">这里</a>。</p>
+<h3 id="heading">生成文章</h3>
+<p>使用如下命令新建一个名为“mysite”的网站：</p>
+<pre><code class="language-bash">hugo new site mysite
+</code></pre>
+<p>接下来，在<a href="https://themes.gohugo.io/">这里</a>找到一个漂亮的网站主题。相信我，Hugo的主题海洋会让你纠结到死……经过一番激烈的挣扎，我最终还是投靠给了<a href="https://themes.gohugo.io/casper/">Casper</a>，没有什么能比一张大图占据整个屏幕带来的冲击感更强了……（说不定过段时间我又折腾着换别的主题了……）。言归正传，以Casper为例，将主题<code>clone</code>到本地的<code>themes</code>文件夹内，执行以下两句即可：</p>
+<pre><code class="language-bash">cd themes
+git clone https://github.com/vjeantet/hugo-theme-casper.git casper
+</code></pre>
+<p><code>mysite/content</code>是用来存放文档的地方，我们在其下建立一个新的<code>Markdown</code>文件：</p>
+<pre><code class="language-bash">hugo new post/first.md
+</code></pre>
+<p>在<code>first.md</code>中写入一些内容，使用如下命令进行本地预览：</p>
+<pre><code class="language-bash">hugo server -t casper -D
+</code></pre>
+<p>几乎瞬间编译成功，打开网址 http://localhost:1313/ 即可查看本地生成的静态网站。</p>
+<h2 id="heading-1">适配主题</h2>
+<p>Hugo的每个主题都会有不同的参数配置，而这些配置被存放在根目录下的<code>config.toml</code>文件中，对于<code>Casper</code>主题，<a href="https://github.com/vjeantet/hugo-theme-casper">官方的GitHub</a>中已经对此作了说明，以下是我的配置：</p>
+<pre><code class="language-toml">BaseUrl= &quot;https://shanetian.github.io/&quot;
+LanguageCode= &quot;zh-cn&quot;
+Title= &quot;I am thinking ...&quot;
+theme = &quot;casper&quot;
+paginate = 5
+DisqusShortname = &quot;suixin-1&quot;  # name in comments
+Copyright = &quot;All rights reserved - 2018&quot;
+canonifyurls = true
+
+[params]
+  description = &quot;路在脚下，心向远方&quot;
+  metadescription = &quot;Used as 'description' meta tag for both home and index pages. If not set, 'description' will be used instead&quot;
+  cover = &quot;images/boy_bicycle.jpg&quot;
+  author = &quot;SuiXin&quot;
+  authorlocation = &quot;Chengdu, China&quot;
+  authorwebsite = &quot;suixinblog.cn&quot;
+  authorbio= &quot;Every man dies, not every man really lives.&quot;
+  logo = &quot;images/bird.png&quot;
+
+# googleAnalyticsUserID = &quot;UA-79101-12&quot;
+
+# Optional RSS-Link, if not provided it defaults to the standard index.xml
+
+# RSSLink = &quot;http://feeds.feedburner.com/...&quot;
+
+  githubName = &quot;ShaneTian&quot;
+  email = &quot;tianxinyqq@163.com&quot;
+  twitterName = &quot;ShaneTian6&quot;
+
+# facebookName = &quot;&quot;
+
+# codepenName = &quot;&quot;
+
+# linkedinName = &quot;&quot;
+
+# stackoverflowId = &quot;&quot;
+
+# keybaseName = &quot;&quot;
+
+# flickrName = &quot;&quot;
+
+# instagramName = &quot;&quot;
+
+# pinterestName = &quot;&quot;
+
+# googlePlusName = &quot;&quot;
+
+# set true if you are not proud of using Hugo (true will hide the footer note &quot;Proudly published with HUGO.....&quot;)
+
+  hideHUGOSupport = false
+
+# Setting a value will load highlight.js and enable syntax highlighting using the style selected.
+
+# See https://github.com/isagalaev/highlight.js/tree/master/src/styles for available styles
+
+# A preview of above styles can be viewed at https://highlightjs.org/static/demo/
+
+  hjsStyle = &quot;atom-one-light&quot;
+
+  [params.social]
+    twitter = &quot;ShaneTian6&quot;
+
+[[menu.main]]
+  name = &quot;Home&quot;
+  weight = -1
+  identifier = &quot;blog&quot;
+  url = &quot;/&quot;
+
+[[menu.main]]
+  name = &quot;Machine Learning&quot;
+  weight = -2
+  identifier = &quot;ml&quot;
+  url = &quot;/tags/machine-learning&quot;
+
+[[menu.main]]
+  name = &quot;Others&quot;
+  weight = -3
+  identifier = &quot;other&quot;
+  url = &quot;/tags/others&quot;
+
+[[menu.main]]
+  name = &quot;About&quot;
+  weight = -4
+  identifier = &quot;about&quot;
+  url = &quot;/about&quot;
+
+  [permalinks]
+  post = &quot;/:year/:month/:day/:title/&quot;
+</code></pre>
+<h2 id="heading-2">文章内的配置</h2>
+<p>使用命令<code>hugo new post/***.md</code>新建<code>Markdown</code>文件之后，文章开头会有默认的被<code>+++</code>包住的内容，这些内容即是该文章的配置。在<code>/mysite/archetypes/default.md</code>中可修改默认的配置。以下为我的默认配置：</p>
+<pre><code class="language-toml">+++
+title = &quot;{{ replace .Name &quot;-&quot; &quot; &quot; | title }}&quot;  # 文章标题，应该不能这样做。
+date = {{ .Date }}  # 自动添加日期信息，应该不能这样做。
+draft = true  # 设为false可被编译为HTML，true供本地修改
+tags = [&quot;&quot;]  # 文章标签，可设置多个，用逗号隔开。Hugo会自动生成标签的子URL
+comments = true  # 是否开启Disqus评论功能
+share = true  # 是否开启分享
++++
+</code></pre>
+<h2 id="heading-3">代码着色</h2>
+<p><code>Casper</code>主题在<code>config.toml</code>文件中的<code>hjsStyle</code>选项提供了<code>highlight.js</code>的代码着色。所有的代码主题和支持的语言可在<a href="https://highlightjs.org/static/demo/">这里</a>看到。<br>
+但在实际的配置中更改配置选项发现并没有更改代码的颜色……我……<br>
+经历了一番数不清的Google之后发现，<code>Casper</code>主题的内置<code>HTML</code>文件设置的<code>highlight.js</code>版本为9.8.0，而现在的<code>highlight.js</code>已经更新到9.12.0，故只需修改<code>/mysite/themes/casper/layouts/partials/header.html</code>中几行代码为9.12.0即可：</p>
+<pre><code class="language-css">{{ if .Site.Params.hjsStyle }}
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/{{ .Site.Params.hjsStyle }}.min.css&quot;&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js&quot;&gt;&lt;/script&gt;
+    {{ if or .Site.Params.hjsExtraLanguages .Params.hjsExtraLanguages }}
+        {{ range $index, $language := (union .Site.Params.hjsExtraLanguages .Params.hjsExtraLanguages) }}
+            &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/{{ $language }}.min.js&quot;&gt;&lt;/script&gt;
+        {{ end }}
+    {{ end }}
+    &lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+{{end}}
+</code></pre>
+<h2 id="heading-4">关于图片</h2>
+<p><code>Casper</code>主题需要设置一个封面图和一个作者头像，选好图片放置在<code>/static/images</code>并在<code>/config.toml</code>设置即可。<br>
+关于浏览器的小图标<code>favicon</code></p>
+<p><img src="/images/hugo_new_site/favicon.jpg" alt=""></p>
+<p>可将喜欢的照片在<a href="https://realfavicongenerator.net/">该网站</a>生成各种分辨率的<code>.ico</code>文件，将其命名为<code>favicon.ico</code>同样放置在<code>/static/images</code>（插入图片时使用相对路径/images/&hellip;，注意使用linux目录分割符/）即可。<code>apple-touch-icon</code>同理。</p>
+<h2 id="github-pages">发布网站到GitHub Pages</h2>
+<p>在使用<code>hugo server -D</code>预览网站无误后可正式发布网站到域名供大家浏览。将要发布的文章内<code>draft</code>改为<code>false</code>后执行命令</p>
+<pre><code class="language-bash">hugo
+</code></pre>
+<p>可看到根目录下多出<code>/public</code>文件夹出来，该文件夹的内容即Hugo生成的整个静态网站。最终我们需要把这些静态网站的文件部署到一个地方，免费且稳定的GitHub Pages是一个很好的选择。具体操作如下：</p>
+<ol>
+<li>在GitHub新建一个Repository命名为<code>ShaneTian.github.io</code>，其中<code>ShaneTian</code>改成自己的GitHub账户名；</li>
+<li>在<code>/mysite</code>外建立一个平行的文件夹，此处假设也命名为<code>/ShaneTian.github.io</code>；</li>
+<li>进入<code>/public</code>文件夹将内容复制到<code>/ShaneTian.github.io</code>；</li>
+<li>将<code>/ShaneTian.github.io</code>的内容<code>push</code>到远程仓库。</li>
+</ol>
+<p>以上命令可在命令行通过以下语句实现：</p>
+<pre><code class="language-bash">mkdir ShaneTian.github.io
+cd mysite/public
+cp -r . ../../ShaneTian.github.io
+cd ../../ShaneTian.github.io
+git init
+git add .
+git commit -m &quot;commit message&quot;
+git remote add origin https://github.com/ShaneTian/ShaneTian.github.io.git
+git push -u origin master
+</code></pre>
+<p>完成以上命令后，等待一分钟左右即可在 <a href="https://shanetian.github.io/">https://shanetian.github.io/</a> 访问你的网站。<br>
+以后每次更新文章后只用将生成的<code>/public</code>文件夹的静态网站内容复制到<code>/ShaneTian.github.io</code>，然后再<code>push</code>到远程仓库即可。也可将步骤写为<code>Shell</code>脚本，此处不再赘述。</p>
+<h2 id="heading-5">使用自己的域名</h2>
+<p>当然，GitHub的域名怎么能满足装*的心理，这时可以将网站设置为自己的域名。购买域名的地方很多，如国外知名网站<a href="https://sg.godaddy.com/zh/">GoDaddy</a>，简体中文页面、支持支付宝付款、不用备案等都带来了很多方便。我的域名<a href="https://suixinblog.cn">suixinblog.cn</a>即是在此购买。购买域名后完成下面两步即可访问自己的域名：</p>
+<ol>
+<li>在上面存放静态网站的Repository设置里面Custom domain填上自己的域名点击save；</li>
+<li>执行以下语句获得自己的GitHub Pages的IP：</li>
+</ol>
+<pre><code class="language-bash">ping shanetian.github.io
+</code></pre>
+<p>即可得到下面的IP地址：</p>
+<p><img src="/images/hugo_new_site/ping-github-ip.jpg" alt=""></p>
+<p>在域名提供商的网站配置DNS即可，以Godaddy为例配置两条记录如下：</p>
+<p><img src="/images/hugo_new_site/godaddy-dns.jpg" alt=""></p>
+<p>可以在GitHub Pages设置强制https协议，这样你的网站就有安全锁啦～</p>
+<p><img src="/images/hugo_new_site/github-pages-enforce-https.jpg" alt=""></p>
+<p><img src="/images/hugo_new_site/suixinblog-https.jpg" alt=""></p>
+<p>大功告成！快去访问你的域名吧！</p>
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/learn_linux">
+                                    <i class="fas fa-tag mr-2"></i>Learn_Linux
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fxcodehub.github.io%2fpost%2f%25E4%25BD%25BF%25E7%2594%25A8hugo%25E6%2590%25AD%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E5%258D%259A%25E5%25AE%25A2%2f&text=%e4%bd%bf%e7%94%a8HUGO%e6%90%ad%e5%bb%ba%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%20">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fxcodehub.github.io%2fpost%2f%25E4%25BD%25BF%25E7%2594%25A8hugo%25E6%2590%25AD%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E5%258D%259A%25E5%25AE%25A2%2f&title=%e4%bd%bf%e7%94%a8HUGO%e6%90%ad%e5%bb%ba%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%20">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fxcodehub.github.io%2fpost%2f%25E4%25BD%25BF%25E7%2594%25A8hugo%25E6%2590%25AD%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E5%258D%259A%25E5%25AE%25A2%2f&t=%e4%bd%bf%e7%94%a8HUGO%e6%90%ad%e5%bb%ba%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%20">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fxcodehub.github.io%2fpost%2f%25E4%25BD%25BF%25E7%2594%25A8hugo%25E6%2590%25AD%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E5%258D%259A%25E5%25AE%25A2%2f&title=%e4%bd%bf%e7%94%a8HUGO%e6%90%ad%e5%bb%ba%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%20">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/post/kali-linux%E4%B8%8B%E5%AE%89%E8%A3%85fcitx%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E6%B3%95/" class="d-block"><img data-src="/images/Linux_Learn06_hu966a9d1457c2ebc2e74afea86088eee9_1030884_700x350_fit_q75_box.jpg" class="card-img-top mx-auto d-block" alt="Kali Linux下安装fcitx中文输入法"><div class="card-body">
+            <h4 class="card-title">Kali Linux下安装fcitx中文输入法</h4>
+            <p class="card-text text-muted text-uppercase">December 30, 2019</p>
+            <div class="card-text">
+                Kali Linux下安装fcitx中文输入法
+
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/post/kali-linux%E5%85%81%E8%AE%B8root-ssh%E7%99%BB%E5%BD%95/" class="d-block"><img data-src="/images/Linux_Learn04_hu323cf5bb85167c49f0b71950f719bc37_1083893_700x350_fit_q75_box.jpg" class="card-img-top mx-auto d-block" alt="Kali Linux允许SSH客户端登录"><div class="card-body">
+            <h4 class="card-title">Kali Linux允许SSH客户端登录</h4>
+            <p class="card-text text-muted text-uppercase">December 30, 2019</p>
+            <div class="card-text">
+                这篇文章讲解了在kali linux下怎样允许root用户使用ssh工具登录系统
+
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/post/linux%E5%8E%8B%E7%BC%A9%E4%B8%8E%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%91%BD%E4%BB%A4/" class="d-block"><img data-src="/images/Linux_Learn05_hu11ac4b508f083ffeb5501f1ec1649c49_1176800_700x350_fit_q75_box.jpg" class="card-img-top mx-auto d-block" alt="Linux压缩与解压缩命令"><div class="card-body">
+            <h4 class="card-title">Linux压缩与解压缩命令</h4>
+            <p class="card-text text-muted text-uppercase">December 30, 2019</p>
+            <div class="card-text">
+                压缩与解压缩命令
+linux系统中有以下五种格式的压缩文件,分别为：.zip 、 .gz 、 .bz2 、 .tar.gz 、 .tar.bz2，其中最常用的文件压缩格式为 .tar.gz和.tar.bz2。
+
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://xcodehub.github.io/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                        <a href="mailto://example@example.com" class="icons d-block">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li><li class="list-inline-item">
+                            <a href="https://github.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://gitlab.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://www.weibo.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-weibo fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.bd8bd649a96c01493b8c.min.js"></script>
+        
+    
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</body>
+</html>

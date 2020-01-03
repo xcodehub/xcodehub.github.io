@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>爱上梧桐花</title><meta name="description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements."><meta name="author" content="邢龙">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.874b8160f104317a9732.min.css">
+        
+    
+
+
+<link rel="canonical" href="https://xcodehub.github.io/post/%E5%AE%89%E8%A3%85%E5%88%A0%E9%99%A4%E5%8D%B8%E8%BD%BDdeb%E5%8C%85%E6%96%87%E4%BB%B6/"><meta property="og:title" content="安装DEB包" />
+<meta property="og:description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xcodehub.github.io/post/%E5%AE%89%E8%A3%85%E5%88%A0%E9%99%A4%E5%8D%B8%E8%BD%BDdeb%E5%8C%85%E6%96%87%E4%BB%B6/" />
+<meta property="og:image" content="https://xcodehub.github.io/Linux_Learn01.jpg" />
+<meta property="article:published_time" content="2019-12-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-12-30T00:00:00+00:00" />
+
+<meta itemprop="name" content="安装DEB包">
+<meta itemprop="description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements.">
+<meta itemprop="datePublished" content="2019-12-30T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-12-30T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="44">
+<meta itemprop="image" content="https://xcodehub.github.io/Linux_Learn01.jpg">
+
+
+
+<meta itemprop="keywords" content="Learn_Linux," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://xcodehub.github.io/Linux_Learn01.jpg"/>
+
+<meta name="twitter:title" content="安装DEB包"/>
+<meta name="twitter:description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements."/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://xcodehub.github.io">爱上梧桐花</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">December 30, 2019</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>44 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>1 min read</span>
+                        </div>
+
+                        <h1>安装DEB包</h1>
+
+                        <ul class="authors list-inline"></ul>
+                    </div>
+                </div><div class="row justify-content-center mb-3">
+                                <div class="col-lg-10">
+                                    <img data-src="/images/Linux_Learn01_hue9cf282285b002d46ab74c65659a85ae_72588_900x500_fit_q75_box.jpg" class="img-fluid rounded mx-auto d-block" alt="安装DEB包">
+                                </div>
+                            </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <p>这篇文章讲解了怎样在命令行和图形界面下安装deb包</p>
+<h3 id="heading">图形界面：</h3>
+<ul>
+<li>安装deb</li>
+</ul>
+<p>​            直接双击图标，输入密码后就可自动安装.</p>
+<pre><code class="language-shell">sudo synaptic
+</code></pre>
+<ul>
+<li>
+<p>卸载deb</p>
+<ol>
+<li>菜单－系统－&gt;系统管理－&gt;新立得软件包管理器 或 Alt+F2(运行窗口)输入</li>
+<li>点击 [来源] 在左侧的选择框中选择 [本地/main] 再在右侧的选择框中查找需要卸载的deb包    如果知道deb包名，直接点击 ［搜索］输入包名</li>
+<li>选择要删的包,右击,选择［标记以便删除］</li>
+<li>选择完后，单击［应用］</li>
+</ol>
+</li>
+</ul>
+<h3 id="heading-1">命令：</h3>
+<p>命令</p>
+<pre><code class="language-shell">sudo apt-get autoremove  要移除的软件包名
+sudo apt-get install  要安装的软件包名
+</code></pre>
+<ul>
+<li>要安装 .deb 套件包时</li>
+</ul>
+<pre><code class="language-shell">sudo dpkg -i package_file.deb
+</code></pre>
+<ul>
+<li>要反安装 .deb 套件包时</li>
+</ul>
+<pre><code class="language-shell">sudo dpkg -r package_name
+</code></pre>
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/learn_linux">
+                                    <i class="fas fa-tag mr-2"></i>Learn_Linux
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fxcodehub.github.io%2fpost%2f%25E5%25AE%2589%25E8%25A3%2585%25E5%2588%25A0%25E9%2599%25A4%25E5%258D%25B8%25E8%25BD%25BDdeb%25E5%258C%2585%25E6%2596%2587%25E4%25BB%25B6%2f&text=%e5%ae%89%e8%a3%85DEB%e5%8c%85">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fxcodehub.github.io%2fpost%2f%25E5%25AE%2589%25E8%25A3%2585%25E5%2588%25A0%25E9%2599%25A4%25E5%258D%25B8%25E8%25BD%25BDdeb%25E5%258C%2585%25E6%2596%2587%25E4%25BB%25B6%2f&title=%e5%ae%89%e8%a3%85DEB%e5%8c%85">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fxcodehub.github.io%2fpost%2f%25E5%25AE%2589%25E8%25A3%2585%25E5%2588%25A0%25E9%2599%25A4%25E5%258D%25B8%25E8%25BD%25BDdeb%25E5%258C%2585%25E6%2596%2587%25E4%25BB%25B6%2f&t=%e5%ae%89%e8%a3%85DEB%e5%8c%85">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fxcodehub.github.io%2fpost%2f%25E5%25AE%2589%25E8%25A3%2585%25E5%2588%25A0%25E9%2599%25A4%25E5%258D%25B8%25E8%25BD%25BDdeb%25E5%258C%2585%25E6%2596%2587%25E4%25BB%25B6%2f&title=%e5%ae%89%e8%a3%85DEB%e5%8c%85">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/post/kali-linux%E4%B8%8B%E5%AE%89%E8%A3%85fcitx%E4%B8%AD%E6%96%87%E8%BE%93%E5%85%A5%E6%B3%95/" class="d-block"><img data-src="/images/Linux_Learn06_hu966a9d1457c2ebc2e74afea86088eee9_1030884_700x350_fit_q75_box.jpg" class="card-img-top mx-auto d-block" alt="Kali Linux下安装fcitx中文输入法"><div class="card-body">
+            <h4 class="card-title">Kali Linux下安装fcitx中文输入法</h4>
+            <p class="card-text text-muted text-uppercase">December 30, 2019</p>
+            <div class="card-text">
+                Kali Linux下安装fcitx中文输入法
+
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/post/kali-linux%E5%85%81%E8%AE%B8root-ssh%E7%99%BB%E5%BD%95/" class="d-block"><img data-src="/images/Linux_Learn04_hu323cf5bb85167c49f0b71950f719bc37_1083893_700x350_fit_q75_box.jpg" class="card-img-top mx-auto d-block" alt="Kali Linux允许SSH客户端登录"><div class="card-body">
+            <h4 class="card-title">Kali Linux允许SSH客户端登录</h4>
+            <p class="card-text text-muted text-uppercase">December 30, 2019</p>
+            <div class="card-text">
+                这篇文章讲解了在kali linux下怎样允许root用户使用ssh工具登录系统
+
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/post/linux%E5%8E%8B%E7%BC%A9%E4%B8%8E%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%91%BD%E4%BB%A4/" class="d-block"><img data-src="/images/Linux_Learn05_hu11ac4b508f083ffeb5501f1ec1649c49_1176800_700x350_fit_q75_box.jpg" class="card-img-top mx-auto d-block" alt="Linux压缩与解压缩命令"><div class="card-body">
+            <h4 class="card-title">Linux压缩与解压缩命令</h4>
+            <p class="card-text text-muted text-uppercase">December 30, 2019</p>
+            <div class="card-text">
+                压缩与解压缩命令
+linux系统中有以下五种格式的压缩文件,分别为：.zip 、 .gz 、 .bz2 、 .tar.gz 、 .tar.bz2，其中最常用的文件压缩格式为 .tar.gz和.tar.bz2。
+
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://xcodehub.github.io/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                        <a href="mailto://example@example.com" class="icons d-block">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li><li class="list-inline-item">
+                            <a href="https://github.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://gitlab.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://www.weibo.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-weibo fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.bd8bd649a96c01493b8c.min.js"></script>
+        
+    
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</body>
+</html>

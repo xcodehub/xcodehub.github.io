@@ -7,15 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xcodehub.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Learn_CAD</title>
+      <link>https://xcodehub.github.io/categories/learn_cad/</link>
+      <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xcodehub.github.io/categories/learn_cad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>System operations</title>
       <link>https://xcodehub.github.io/categories/system-operations/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://xcodehub.github.io/categories/system-operations/</guid>
       <description></description>
@@ -24,7 +33,7 @@
     <item>
       <title>Poetry</title>
       <link>https://xcodehub.github.io/categories/poetry/</link>
-      <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 04 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://xcodehub.github.io/categories/poetry/</guid>
       <description></description>

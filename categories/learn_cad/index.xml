@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learn_CAD on 爱上梧桐花</title>
+    <link>https://xcodehub.github.io/categories/learn_cad/</link>
+    <description>Recent content in Learn_CAD on 爱上梧桐花</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 13 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://xcodehub.github.io/categories/learn_cad/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CAD倾斜图形摆正</title>
+      <link>https://xcodehub.github.io/post/%E6%80%8E%E6%A0%B7%E4%BD%BF%E5%80%BE%E6%96%9C%E7%9A%84cad%E5%9B%BE%E5%BD%A2%E5%8F%98%E6%AD%A3/</link>
+      <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xcodehub.github.io/post/%E6%80%8E%E6%A0%B7%E4%BD%BF%E5%80%BE%E6%96%9C%E7%9A%84cad%E5%9B%BE%E5%BD%A2%E5%8F%98%E6%AD%A3/</guid>
+      <description>&lt;p&gt;cad怎么把图形摆正？cad中的图有可能因为角度的原因，打开的时候，图形是斜着的，歪头看太累了，怎么调整成正着的呢？下面分享cad旋转图形的详细教程，需要的朋友可以参考下&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xcodehub.github.io/categories/system-operations/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Win10快捷键大全</title>
+      <link>https://xcodehub.github.io/post/win10%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8/</link>
+      <pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xcodehub.github.io/post/win10%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8/</guid>
+      <description>&lt;p&gt;整理一下Win10快捷键大全、组合快捷键大全！&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>增加windows右键菜单打开命令行</title>

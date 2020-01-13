@@ -7,10 +7,38 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xcodehub.github.io/authors/%E9%82%A2%E9%BE%99/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CAD倾斜图形摆正</title>
+      <link>https://xcodehub.github.io/post/%E6%80%8E%E6%A0%B7%E4%BD%BF%E5%80%BE%E6%96%9C%E7%9A%84cad%E5%9B%BE%E5%BD%A2%E5%8F%98%E6%AD%A3/</link>
+      <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xcodehub.github.io/post/%E6%80%8E%E6%A0%B7%E4%BD%BF%E5%80%BE%E6%96%9C%E7%9A%84cad%E5%9B%BE%E5%BD%A2%E5%8F%98%E6%AD%A3/</guid>
+      <description>&lt;p&gt;cad怎么把图形摆正？cad中的图有可能因为角度的原因，打开的时候，图形是斜着的，歪头看太累了，怎么调整成正着的呢？下面分享cad旋转图形的详细教程，需要的朋友可以参考下&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Win10快捷键大全</title>
+      <link>https://xcodehub.github.io/post/win10%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8/</link>
+      <pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xcodehub.github.io/post/win10%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8/</guid>
+      <description>&lt;p&gt;整理一下Win10快捷键大全、组合快捷键大全！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>老技工的自述</title>
+      <link>https://xcodehub.github.io/post/%E4%B8%80%E4%B8%AA%E8%80%81%E6%8A%80%E5%B7%A5/</link>
+      <pubDate>Sat, 04 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://xcodehub.github.io/post/%E4%B8%80%E4%B8%AA%E8%80%81%E6%8A%80%E5%B7%A5/</guid>
+      <description>栀子花开花落，花娘来了又去，一位老技工。
+一位老技工，安防专业知识不精通，系统集成瞎琢磨，系统运维稍了解，网络运维想学习，软件编程有梦想，美女同事有幻想.</description>
+    </item>
     
     <item>
       <title>增加windows右键菜单打开命令行</title>
